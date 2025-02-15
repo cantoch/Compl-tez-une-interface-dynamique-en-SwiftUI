@@ -22,4 +22,6 @@ struct Dish {
     var ingredients: String
     var spiceLevel: SpiceLevel
     var imageName: String
+// Ajout de la variable prix?
+  
 }

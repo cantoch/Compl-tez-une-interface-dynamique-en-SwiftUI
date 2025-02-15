@@ -13,7 +13,7 @@ struct MenuView: View {
     let viewModel: ViewModel = ViewModel()
     
     var body: some View {
-        List {
+        List{
             // À completer
         }
     }
