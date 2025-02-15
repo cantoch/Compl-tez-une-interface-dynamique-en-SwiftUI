@@ -17,7 +17,7 @@ struct LineView: View {
             Image(imageName)
                 .padding(.vertical, 2.0)
             Text(leftText)
-                .font(.custom("Plus Jakarta", size: 14))
+                .font(.custom("PlusJakarta", size: 14))
                 .padding(.vertical, 2.0)
             Spacer()
             Text(rightText)

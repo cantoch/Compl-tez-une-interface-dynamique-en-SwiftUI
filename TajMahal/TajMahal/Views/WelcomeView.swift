@@ -10,14 +10,14 @@ import SwiftUI
 // Page d'accueil
 struct WelcomeView: View {
     var body: some View {
-        
-            VStack{
-            Image("TajMahal")
-                .resizable()
-                .scaledToFit()
-                .padding(.bottom)
-                .padding(.leading)
-                .padding(.trailing)
+        NavigationStack {
+            HStack {
+                Image("TajMahal")
+            }
+            .frame(width: 335, height: 423)
+            .scaledToFit()
+            .padding(.bottom)
+            
             HStack(alignment: .top){
                 VStack(alignment: .leading){
                     Text("Restaurant Indien")
@@ -32,32 +32,31 @@ struct WelcomeView: View {
                     .scaledToFit()
                     .frame(width: 40, height: 40)
             }
-            .padding(.horizontal)
+            .frame(width: 335, height: 40)
+            .padding(.top)
             .padding(.bottom)
-            
-        }
-        VStack{
-            LineView(imageName: "", leftText: "Mardi", rightText: "11h30 - 14h30 · 18h30 - 22h00 ")
-            LineView(imageName: "", leftText: "Type de Service", rightText: "À emporter")
-            LineView(imageName: "", leftText: "12  Avenue de la Brique - 75010 Paris", rightText: "")
-            LineView(imageName: "", leftText: "www.tajmahal.fr", rightText: "")
-            LineView(imageName: "", leftText: "06 12 34 56 78", rightText: "")
-        }
-        .padding(.leading)
-        .padding(.trailing)
-        Spacer()
-        NavigationLink {
+            VStack{
+                LineView(imageName: "", leftText: "Mardi", rightText: "11h30-14h30 · 18h30-22h00 ")
+                LineView(imageName: "", leftText: "Type de Service", rightText: "À emporter")
+                LineView(imageName: "", leftText: "12  Avenue de la Brique - 75010 Paris", rightText: "")
+                LineView(imageName: "", leftText: "www.tajmahal.fr", rightText: "")
+                LineView(imageName: "", leftText: "06 12 34 56 78", rightText: "")
+            }
+            .frame(width: 337, height: 130)
+            Spacer()
+            NavigationLink {
                 MenuView()
-        } label : {
+            } label : {
                 Text("Accéder au menu")
                     .frame(width: 335, height: 50)
                     .cornerRadius(10)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
                     .background(RoundedRectangle(cornerRadius: 10).fill(Color(red: 0.811, green: 0.183, blue: 0.183)))
-                }
             }
         }
+    }
+}
 #Preview {
     WelcomeView()
 }
