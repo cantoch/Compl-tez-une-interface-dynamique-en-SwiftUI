@@ -15,18 +15,17 @@ struct LineView: View {
     var body: some View {
         HStack {
             Image(imageName)
-                .padding(.vertical, 2.0)
+                .frame(width: 12, height: 12)
             Text(leftText)
-                .font(.custom("PlusJakarta", size: 14))
-                .padding(.vertical, 2.0)
             Spacer()
             Text(rightText)
-                .font(.custom("Plus Jakarta", size: 14))
-                .padding(.vertical, 2.0)
+            
         }
+        .foregroundColor(Color(red: 0.4, green: 0.4, blue: 0.4)) // #666666)
+        .font(.custom("PlusJakartaSans-semiBold", size: 12))
     }
 }
 
 #Preview {
-    LineView(imageName: "Horloge", leftText: "Mardi", rightText: "")
+    LineView(imageName: "Horaire", leftText: "Mardi", rightText: "")
 }

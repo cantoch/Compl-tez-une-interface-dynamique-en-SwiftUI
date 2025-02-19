@@ -14,7 +14,7 @@ struct DetailView: View {
             Image("TajMahal")
                 .aspectRatio(contentMode: .fill)
                
-                
+    
                 
         }
     }
