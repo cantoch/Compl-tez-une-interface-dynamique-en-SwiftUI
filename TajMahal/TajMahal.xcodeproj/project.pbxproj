@@ -14,9 +14,12 @@
 		42E9DCB52AF11138007CE7D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42E9DCB42AF11138007CE7D0 /* Preview Assets.xcassets */; };
 		42E9DCC22AF117AE007CE7D0 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DCC12AF117AE007CE7D0 /* MenuView.swift */; };
 		9A123ABC2D64EA71007FBC7C /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */; };
-		9A123B282D6559BF007FBC7C /* StickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A123B272D6559BF007FBC7C /* StickerView.swift */; };
+		9A123B282D6559BF007FBC7C /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A123B272D6559BF007FBC7C /* RowView.swift */; };
 		9ACCDA822D5FF17200124E1E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCDA812D5FF17200124E1E /* DetailView.swift */; };
 		9ACCDA992D5FFBB600124E1E /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCDA982D5FFBB600124E1E /* LineView.swift */; };
+		9AED397B2D6E8A8700C53B76 /* SpicyLightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AED397A2D6E8A8700C53B76 /* SpicyLightView.swift */; };
+		9AED397D2D6EA36D00C53B76 /* SpicyMediumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AED397C2D6EA36D00C53B76 /* SpicyMediumView.swift */; };
+		9AED397F2D6EA38300C53B76 /* SpicyHotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AED397E2D6EA38300C53B76 /* SpicyHotView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,14 +32,17 @@
 		42E9DCC02AF11662007CE7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		42E9DCC12AF117AE007CE7D0 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		9A123AB92D64E738007FBC7C /* TajMahal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TajMahal.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A123B272D6559BF007FBC7C /* StickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerView.swift; sourceTree = "<group>"; };
+		9A123B272D6559BF007FBC7C /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		9ACCDA812D5FF17200124E1E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		9ACCDA982D5FFBB600124E1E /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		9AED397A2D6E8A8700C53B76 /* SpicyLightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpicyLightView.swift; sourceTree = "<group>"; };
+		9AED397C2D6EA36D00C53B76 /* SpicyMediumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpicyMediumView.swift; sourceTree = "<group>"; };
+		9AED397E2D6EA38300C53B76 /* SpicyHotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpicyHotView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		9A123AD22D64FB33007FBC7C /* Plus_Jakarta_Sans */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Plus_Jakarta_Sans; sourceTree = "<group>"; };
-		9A123AE82D650E51007FBC7C /* icones_LineView */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = icones_LineView; sourceTree = "<group>"; };
+		9A123AE82D650E51007FBC7C /* Pictogrammes */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Pictogrammes; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +61,7 @@
 			children = (
 				42E9DCAC2AF11136007CE7D0 /* TajMahal */,
 				9A123AB92D64E738007FBC7C /* TajMahal.app */,
-				9A123AE82D650E51007FBC7C /* icones_LineView */,
+				9A123AE82D650E51007FBC7C /* Pictogrammes */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,7 +95,10 @@
 				42E9DCC12AF117AE007CE7D0 /* MenuView.swift */,
 				9ACCDA812D5FF17200124E1E /* DetailView.swift */,
 				9ACCDA982D5FFBB600124E1E /* LineView.swift */,
-				9A123B272D6559BF007FBC7C /* StickerView.swift */,
+				9A123B272D6559BF007FBC7C /* RowView.swift */,
+				9AED397A2D6E8A8700C53B76 /* SpicyLightView.swift */,
+				9AED397C2D6EA36D00C53B76 /* SpicyMediumView.swift */,
+				9AED397E2D6EA38300C53B76 /* SpicyHotView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -111,7 +120,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				9A123AD22D64FB33007FBC7C /* Plus_Jakarta_Sans */,
-				9A123AE82D650E51007FBC7C /* icones_LineView */,
+				9A123AE82D650E51007FBC7C /* Pictogrammes */,
 			);
 			name = TajMahal;
 			productName = TajMahal;
@@ -171,8 +180,11 @@
 				428D2B532AFA882700BBA4F5 /* ViewModel.swift in Sources */,
 				9ACCDA822D5FF17200124E1E /* DetailView.swift in Sources */,
 				42E9DCC22AF117AE007CE7D0 /* MenuView.swift in Sources */,
+				9AED397D2D6EA36D00C53B76 /* SpicyMediumView.swift in Sources */,
+				9AED397F2D6EA38300C53B76 /* SpicyHotView.swift in Sources */,
+				9AED397B2D6E8A8700C53B76 /* SpicyLightView.swift in Sources */,
 				42E9DCAE2AF11136007CE7D0 /* TajMahalApp.swift in Sources */,
-				9A123B282D6559BF007FBC7C /* StickerView.swift in Sources */,
+				9A123B282D6559BF007FBC7C /* RowView.swift in Sources */,
 				9ACCDA992D5FFBB600124E1E /* LineView.swift in Sources */,
 				428D2B512AFA851900BBA4F5 /* Model.swift in Sources */,
 				9A123ABC2D64EA71007FBC7C /* WelcomeView.swift in Sources */,
@@ -309,7 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TajMahal/Preview Content\"";
-				DEVELOPMENT_TEAM = 6FH7WNJPHQ;
+				DEVELOPMENT_TEAM = HZAZV43ASV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TajMahal/Info.plist;
@@ -322,7 +334,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.amandinecousin.TajMahal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.renaudleroy.TajMahal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -338,7 +350,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TajMahal/Preview Content\"";
-				DEVELOPMENT_TEAM = 6FH7WNJPHQ;
+				DEVELOPMENT_TEAM = HZAZV43ASV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TajMahal/Info.plist;
@@ -351,7 +363,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.amandinecousin.TajMahal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.renaudleroy.TajMahal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

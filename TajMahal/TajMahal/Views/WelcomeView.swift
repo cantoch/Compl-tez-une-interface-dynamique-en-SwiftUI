@@ -12,7 +12,7 @@ import SwiftUI
 struct WelcomeView: View {
     var body: some View {
         NavigationStack{
-            VStack{
+            VStack {
                 Image("TajMahal")
             }
             .frame(width: 335, height: 423)
@@ -25,7 +25,7 @@ struct WelcomeView: View {
                     Text("Taj Mahal")
                         .fontWeight(.bold)
                         .font(.custom("PlusJakartaSans-regular", size: 18))
-                    
+                        .foregroundColor(Color(red: 0.2, green: 0.2, blue: 0.2)) // #333333)
                 }
                 Spacer()
                 Image("Logo")
@@ -35,8 +35,7 @@ struct WelcomeView: View {
                     .scaledToFit()
             }
             .frame(width: 335, height: 40)
-            Spacer()
-            GeometryReader { geometry in
+            Spacer() 
                 VStack{
                     LineView(imageName: "Horaire", leftText: "Mardi", rightText: "11h30 - 14h30・ 18h30 - 22h00")
                     Spacer()
@@ -47,7 +46,7 @@ struct WelcomeView: View {
                     LineView(imageName: "Site", leftText: "www.tajmahal.fr", rightText: "")
                     Spacer()
                     LineView(imageName: "Téléphone", leftText: "06 12 34 56 78", rightText: "")
-                }}
+                }
             .frame(width: 337, height: 130)
             Spacer()
             NavigationLink {
