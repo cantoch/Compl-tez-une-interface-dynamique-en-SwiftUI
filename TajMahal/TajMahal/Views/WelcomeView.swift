@@ -36,17 +36,17 @@ struct WelcomeView: View {
             }
             .frame(width: 335, height: 40)
             Spacer() 
-                VStack{
-                    LineView(imageName: "Horaire", leftText: "Mardi", rightText: "11h30 - 14h30・ 18h30 - 22h00")
-                    Spacer()
-                    LineView(imageName: "Service", leftText: "Type de Service", rightText: "À emporter")
-                    Spacer()
-                    LineView(imageName: "Localisation", leftText: "12  Avenue de la Brique - 75010 Paris", rightText: "")
-                    Spacer()
-                    LineView(imageName: "Site", leftText: "www.tajmahal.fr", rightText: "")
-                    Spacer()
-                    LineView(imageName: "Téléphone", leftText: "06 12 34 56 78", rightText: "")
-                }
+            VStack{
+                LineView(imageName: "Horaire", leftText: "Mardi", rightText: "11h30 - 14h30・ 18h30 - 22h00")
+                Spacer()
+                LineView(imageName: "Service", leftText: "Type de Service", rightText: "À emporter")
+                Spacer()
+                LineView(imageName: "Localisation", leftText: "12  Avenue de la Brique - 75010 Paris", rightText: "")
+                Spacer()
+                LineView(imageName: "Site", leftText: "www.tajmahal.fr", rightText: "")
+                Spacer()
+                LineView(imageName: "Téléphone", leftText: "06 12 34 56 78", rightText: "")
+            }
             .frame(width: 337, height: 130)
             Spacer()
             NavigationLink {

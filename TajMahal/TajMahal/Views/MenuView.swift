@@ -13,56 +13,44 @@ struct MenuView: View {
     let viewModel: ViewModel = ViewModel()
     
     var body: some View {
-        /*
-         Text("Menu")
-         .font(.custom("PlusJakartaSans-Bold", size: 18))
-         .fontWeight(.bold)
-         .foregroundColor(Color(red: 0.2, green: 0.2, blue: 0.2)) // #333333)
-         .frame(maxHeight: 18)
-         */
         
-        
-        List  {
-            Section(header: Text("Entrées")
-                .textCase(.none)
-                .frame(width: 335, alignment: .leading)
-                .font(.custom("PlusJakartaSans-Bold", size: 14))
-                .foregroundColor(Color(red: 0.4, green: 0.4, blue: 0.4))) // #666666)
-            {
-                ForEach(viewModel.apetizerArray, id: \.self) { apetizer in
-                    RowView(dish: apetizer)
-                        .listStyle(InsetGroupedListStyle())
+        NavigationStack {
+            List  {
+                Section(header: Text("Entrées")
+                    .textCase(.none)
+                    .frame(width: 335, alignment: .leading)
+                    .font(.custom("PlusJakartaSans-Bold", size: 14))
+                    .foregroundColor(Color(red: 0.4, green: 0.4, blue: 0.4))) // #666666)
+                {
+                    ForEach(viewModel.apetizerArray, id: \.self) { apetizer in
+                        NavigationLink(destination: DetailView(dish: apetizer)) {
+                            RowView(dish: apetizer)
+                        }
                         .listRowSeparator(.hidden)
                         .listRowBackground(Color.clear)
+                    }
                 }
-            }
-            Section(header: Text("Plats Principaux")
-                .textCase(.none)
-                .frame(width: 335, alignment: .leading)
-                .font(.custom("PlusJakartaSans-Bold", size: 14))
-                .foregroundColor(Color(red: 0.4, green: 0.4, blue: 0.4))) // #666666)
-            {
-                ForEach(viewModel.mainCourseArray, id: \.self) { mainCourse in
-                    RowView(dish: mainCourse)
-                        .listStyle(InsetGroupedListStyle())
+                Section(header: Text("Plats Principaux")
+                    .textCase(.none)
+                    .frame(width: 335, alignment: .leading)
+                    .font(.custom("PlusJakartaSans-Bold", size: 14))
+                    .foregroundColor(Color(red: 0.4, green: 0.4, blue: 0.4))) // #666666)
+                {
+                    ForEach(viewModel.mainCourseArray, id: \.self) { mainCourse in
+                        NavigationLink(destination: DetailView(dish: mainCourse)) {
+                            RowView(dish: mainCourse)
+                        }
                         .listRowSeparator(.hidden)
                         .listRowBackground(Color.clear)
+                    }
+                    .navigationTitle(Text("Menu"))
                 }
             }
+            .frame(maxWidth: .infinity)
+            .listRowSpacing(-12)
         }
-        .frame(maxWidth: .infinity)
-        .listRowSpacing(-12)
     }
 }
-
-
-
-
-
-
-
-
-
 
 
 #Preview {

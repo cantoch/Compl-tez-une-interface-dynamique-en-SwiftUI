@@ -34,7 +34,7 @@ struct RowView: View {
                         .frame(maxWidth: 180, alignment: .leading)
                     Spacer()
                     HStack {
-                        Text("5,50€")
+                        Text(String(format: "%.2f€", dish.price))
                             .font(.custom("PlusJakartaSans-semiBold",size: 12))
                             .foregroundColor(Color(red: 0.4, green: 0.4, blue: 0.4)) // #666666)
                         Spacer()
@@ -62,7 +62,7 @@ struct RowView: View {
 
 
 #Preview {
-    RowView(dish: Dish (name: "Samosas aux légumes", description: "Délicieux chaussons frits garnis de légumes épicés", allergens: "Farine de blé", ingredients: "Mélange de légumes (pommes de terre, petits pois, carottes), épices indiennes, pâte à samosa, huile", spiceLevel: .light, imageName: "Samosas"))
+    RowView(dish: Dish (name: "Samosas aux légumes", description: "Délicieux chaussons frits garnis de légumes épicés", allergens: "Farine de blé", ingredients: "Mélange de légumes (pommes de terre, petits pois, carottes), épices indiennes, pâte à samosa, huile", spiceLevel: .light, imageName: "Samosas", price: 5.50))
 }
 
 /*

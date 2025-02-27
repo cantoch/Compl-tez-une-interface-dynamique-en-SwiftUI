@@ -28,5 +28,5 @@ struct SpicyMediumView: View {
 
 
 #Preview {
-SpicyMediumView()
+    SpicyMediumView()
 }

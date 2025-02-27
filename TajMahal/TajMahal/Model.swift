@@ -22,6 +22,7 @@ struct Dish: Hashable {
     var ingredients: String
     var spiceLevel: SpiceLevel
     var imageName: String
+    var price: Double
     
   
 // Ajout de la variable prix?

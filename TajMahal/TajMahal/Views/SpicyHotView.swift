@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SpicyHotView: View {
     var body: some View {
-
+        
         ZStack {
             Form {
             }
@@ -28,5 +28,5 @@ struct SpicyHotView: View {
 
 
 #Preview {
-SpicyHotView()
+    SpicyHotView()
 }
