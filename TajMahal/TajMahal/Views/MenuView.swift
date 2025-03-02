@@ -13,7 +13,6 @@ struct MenuView: View {
     let viewModel: ViewModel = ViewModel()
     
     var body: some View {
-        
         NavigationStack {
             List  {
                 Section(header: Text("Entrées")
@@ -23,11 +22,15 @@ struct MenuView: View {
                     .foregroundColor(Color(red: 0.4, green: 0.4, blue: 0.4))) // #666666)
                 {
                     ForEach(viewModel.apetizerArray, id: \.self) { apetizer in
-                        NavigationLink(destination: DetailView(dish: apetizer)) {
-                            RowView(dish: apetizer)
-                        }
-                        .listRowSeparator(.hidden)
-                        .listRowBackground(Color.clear)
+                        RowView(dish: apetizer)
+                            .background(
+                                NavigationLink {
+                                    DetailView(dish: apetizer)
+                                } label: { EmptyView()
+                                }
+                            )
+                            .listRowSeparator(.hidden)
+                            .listRowBackground(Color.clear)
                     }
                 }
                 Section(header: Text("Plats Principaux")
@@ -37,21 +40,24 @@ struct MenuView: View {
                     .foregroundColor(Color(red: 0.4, green: 0.4, blue: 0.4))) // #666666)
                 {
                     ForEach(viewModel.mainCourseArray, id: \.self) { mainCourse in
-                        NavigationLink(destination: DetailView(dish: mainCourse)) {
-                            RowView(dish: mainCourse)
-                        }
-                        .listRowSeparator(.hidden)
-                        .listRowBackground(Color.clear)
+                        RowView(dish: mainCourse)
+                            .background(
+                                NavigationLink {
+                                    DetailView(dish: mainCourse)
+                                } label: { EmptyView()
+                                }
+                            )
+                            .listRowSeparator(.hidden)
+                            .listRowBackground(Color.clear)
                     }
-                    .navigationTitle(Text("Menu"))
                 }
+                .navigationTitle(Text("Menu"))
             }
-            .frame(maxWidth: .infinity)
-            .listRowSpacing(-12)
+            .listRowSpacing(-10)
+            //.listSectionSpacing(0)
         }
     }
 }
-
 
 #Preview {
     MenuView()
