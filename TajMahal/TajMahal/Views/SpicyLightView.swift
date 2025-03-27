@@ -20,7 +20,7 @@ struct SpicyLightView: View {
                 Image("piment_gris")
                 Image("piment_gris")
             }
-            .frame(width: 58, height: 14)
+            .frame(width: 52, height: 12)
         }
         .frame(width: 74, height: 22)
     }

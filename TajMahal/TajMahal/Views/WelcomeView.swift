@@ -12,10 +12,12 @@ import SwiftUI
 struct WelcomeView: View {
     var body: some View {
         NavigationStack{
-            VStack {
-                Image("TajMahal")
-            }
-            .frame(width: 335, height: 423)
+            Image("TajMahal")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(maxWidth: 335, maxHeight: 423)
+                .cornerRadius(10)
+                .clipped()
             Spacer()
             HStack{
                 VStack(alignment: .leading){

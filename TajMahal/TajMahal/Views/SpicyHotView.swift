@@ -20,7 +20,7 @@ struct SpicyHotView: View {
                 Image("piment_rouge")
                 Image("piment_rouge")
             }
-            .frame(width: 58, height: 14)
+            .frame(width: 52, height: 12)
         }
         .frame(width: 74, height: 22)
     }
